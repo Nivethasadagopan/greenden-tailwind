@@ -1,0 +1,113 @@
+<style>
+    .container {
+        background-color: rgb(181, 236, 236);
+        padding: 10px;
+        display: grid;
+        grid-template-rows: 1fr 3fr 1fr;
+    }
+
+    .header {
+
+        background-color: aqua;
+        padding: 20px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    }
+
+    .footer {
+        background-color: aqua;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    }
+
+    .middle {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        
+        margin: 5px;
+        
+     
+    }
+
+    .col1 {
+        background-color: rgb(74, 231, 100);
+        margin: 5px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .col2 {
+        background-color: orange;
+        margin: 5px;
+        display: grid;
+        grid-template-rows: 1fr 1fr ;
+       
+               
+    }
+
+    .article{
+        display: grid;
+
+        justify-content: center;
+        align-items: end;
+    }
+
+    .image{
+        display: grid;
+         padding: 2px;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    .one{
+        background-color: rgb(228, 188, 115);
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin: 3px;
+
+    }
+
+    .two{
+        background-color: rgb(228, 188, 115);
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin: 3px;
+
+    }
+
+    .three{
+        background-color: rgb(228, 188, 115);
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin: 3px;
+
+    }
+
+    
+</style>
+
+<div class="container">
+    <div class="header">Header</div>
+    <div class="middle">
+        <div class="col1">Aside</div>
+        <div class="col2">
+            <div class="article">Article</div>
+            <div class="image">
+                <div class="one">image</div>
+                <div class="two">image</div>
+                <div class="three">image</div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">Footer</div>
+</div>
