@@ -16,15 +16,16 @@
 
         <h1 class="text-2xl">GREENDEN</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="w-5 h-6 md:hidden">
+        <svg onclick="toggleMenu()" id="menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="currentColor" class="w-5 h-6 md:hidden cursor-pointer">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
 
 
 
 
-        <ul class="flex gap-5 text-gray-600 hidden md:flex">
+        <ul id="menu"
+            class="hidden md:flex flex-col md:flex-row gap-5 text-gray-600 absolute md:static top-16 left-0 bg-green-100 w-full text-right md:w-auto p-4 md:p-0 z-20">
             <li>
                 <a class="hover:underline hover:text-black" href="index.html">
                     Home
@@ -187,12 +188,19 @@
     </section>
 
     <!-- Footer -->
-     <section class="bg-green-100 p-10  flex flex-col gap-5">
+    <section class="bg-green-100 p-10  flex flex-col gap-5">
         <h1 class="text-4xl font-bold">Greenden</h1>
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, officiis?</p>
         <p>&copy; 2025 Greenday.com</p>
-     </section>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
 
 </body>
 
